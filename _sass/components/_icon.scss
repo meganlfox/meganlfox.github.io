@@ -1,0 +1,47 @@
+///
+/// Massively by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Icon */
+
+	.fab {
+		font-size:150%;
+		text-decoration:none;
+		border-bottom:none;
+		position:relative
+	}
+
+	.fab:before {
+		-moz-osx-font-smoothing:grayscale;
+		-webkit-font-smoothing:antialiased;
+		font-style:normal;
+		font-weight:normal;
+		text-transform:none !important
+	}
+	
+	.fas {
+		font-size:150%;
+		text-decoration:none;
+		border-bottom:none;
+		position:relative
+	}
+
+	.fas:before {
+		-moz-osx-font-smoothing:grayscale;
+		-webkit-font-smoothing:antialiased;
+		font-style:normal;
+		font-weight:normal;
+		text-transform:none !important
+	}
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		position: relative;
+
+		> .label {
+			display: none;
+		}
+	}

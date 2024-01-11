@@ -1,0 +1,110 @@
+---
+layout: null
+title: Glass Bottom Games
+description: We make absurdly cozy games about animals doing people things
+sitemap:
+    priority: 1.0
+    lastmod: 2018-10-27
+    changefreq: weekly
+---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<p><img src="{{ "/images/logo_transparent.png" | absolute_url }}" alt="" /></p>
+						<p>We make absurdly cozy games about animals doing people things</p>
+						<ul class="actions">
+							<li><a href="#header" class="icon solo scrolly"><i>(keep scrolling...)</i></a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							
+								<header class="major">
+									<p>Glass Bottom Games makes absurdly cozy games about animals doing people things. You'll wander around on cool foggy nights, make friends with detective cats, and run into tiny birbs trying very hard to do people things.</p>
+									<p>Here's our recent games and latest news. Or, just use the menu up top there to find what you want!</p>
+								</header>
+								<p><span class="image left"><a href="{{ "/bird/" | absolute_url }}" class="image"><img src="{{ "/images/polaroid_small_skatebird.png" | absolute_url }}" alt="" /></a></span>
+								<b><a href="{{ "/bird/" | absolute_url }}">SkateBIRD</a></b><br>
+								<a href="https://store.steampowered.com/app/971030/SkateBIRD/" rel="nofollow"><img src="{{ "/images/glyphs/steam.png" | absolute_url }}" class="image" alt="Steam" height="30px"/></a>&nbsp;&nbsp;<a href="https://www.xbox.com/en-US/microsoft-store" rel="nofollow"><img src="{{ "/images/glyphs/xbox.png" | absolute_url }}" class="image" alt="Xbox" height="30px"/></a>&nbsp;&nbsp;<a href="https://www.nintendo.com/games/detail/skatebird-switch/" rel="nofollow"><img src="{{ "/images/glyphs/nintendo_switch.png" | absolute_url }}" class="image" alt="Nintendo Switch" height="30px"/></a><br>
+								Drop in, and be a skateboarding bird. Grind on bendy straws, kickflip over staplers, and carve killer lines through cardboard and sticky tape parks. Skate an expansively tiny world with simple controls even a Hawk named Tony would dig. Skatebird can't fly, but on a board, they soar. </p>
+								<p><span class="image right"><a href="https://www.spartanfist.com" class="image"><img src="{{ "/images/polaroid_small_spartan_fist.png" | absolute_url }}" alt="" /></a></span>
+								<b><a href="https://www.spartanfist.com">Spartan Fist</b></a><br>
+								<a href="https://store.steampowered.com/app/632170/Spartan_Fist/" rel="nofollow"><img src="{{ "/images/glyphs/steam.png" | absolute_url }}" class="image" alt="Steam" height="30px"/></a>&nbsp;&nbsp;<a href="https://www.microsoft.com/en-us/p/spartan-fist/9p24v4bg5wf1" rel="nofollow"><img src="{{ "/images/glyphs/xbox.png" | absolute_url }}" class="image" alt="Xbox" height="30px"/></a>&nbsp;&nbsp;<a href="https://www.nintendo.com/games/detail/spartan-fist-switch/" rel="nofollow"><img src="{{ "/images/glyphs/nintendo_switch.png" | absolute_url }}" class="image" alt="Nintendo Switch" height="30px"/></a>&nbsp;&nbsp;<a href="https://store.playstation.com/en-gb/product/EP3111-CUSA17631_00-JANDUSOFT0000001" rel="nofollow"><img src="{{ "/images/glyphs/sony.png" | absolute_url }}" class="image" alt="Sony" height="30px"/></a><br>
+								Fight your way to glory in this first-person puncher as you work to retrieve the fabled Spartan Fist. Playing as Emma Jones, you’ll tap your inner badass as you punch dudes so hard they explode. Delve into a whimsically gritty and colorfully punk pixilated world. </p>
+								<p><span class="image left"><a href="{{ "/hot_tin_roof/" | absolute_url }}" class="image"><img src="{{ "/images/polaroid_small_hot_tin_roof.png" | absolute_url }}" alt="" /></a></span>
+								<b><a href="{{ "/hot_tin_roof/" | absolute_url }}">Hot Tin Roof: The Cat That Wore A Fedora</b></a><br>
+								<a href="https://store.steampowered.com/app/253390/Hot_Tin_Roof_The_Cat_That_Wore_A_Fedora/" rel="nofollow"><img src="{{ "/images/glyphs/steam.png" | absolute_url }}" class="image" alt="Steam" height="30px"/></a><br>
+								You’re the Private Investigator on a string of grisly murders, scouring for clues in a 3D side-scrolling world. Grab your fedora and revolver - in Hot Tin Roof you’re on the case! Dive into a noir mystery and become Emma Jones, the only PI partnered to a cat named Franky.</p>
+               
+							
+
+						<!-- Posts -->
+							<section class="posts">
+                {% for post in site.posts limit:3 %}
+                {% assign mod3 = forloop.index | modulo: 3 %}
+  								<article>
+  									<header>
+  										<span class="date">{{ post.date | date_to_string }}</span>
+  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+  									</header>
+  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+  									<p>{{ post.excerpt }}</p>
+  									<ul class="actions">
+  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+  									</ul>
+  								</article>
+                {% endfor %}
+
+							</section>
+
+						<!-- Footer -->
+							<footer>
+                <ul class="actions">
+                  <li><a href="{{ "/news/" | absolute_url }}" class="button">Older News</a></li>
+                </ul>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+    {% include tracking.html %}
+
+	</body>
+</html>

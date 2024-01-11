@@ -1,0 +1,23 @@
+<ul class="links">
+	<li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">Home</a></li>
+	<li class="{% if page.url contains '/bird/' %} active {% endif %}"><a href="{{ "/bird/" | absolute_url }}">SkateBIRD</a></li>
+	<li><a href="https://www.spartanfist.com">Spartan Fist</a></li>
+	<li class="{% if page.url contains '/hot_tin_roof/' %} active {% endif %}"><a href="{{ "/hot_tin_roof/" | absolute_url }}">Hot Tin Roof</a></li>
+	<li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "/about/" | absolute_url }}">About Us</a></li>
+	
+	<li>
+	{% if page.url contains '/bird/' %}
+	<a href="{{ "/press/sheet.php?p=skatebird" | absolute_url }}">
+	{% elsif page.url contains '/hot_tin_roof/' %}
+	<a href="{{ "/press/sheet.php?p=hot_tin_roof" | absolute_url }}">
+	{% else %}
+	<a href="{{ "/press/" | absolute_url }}">
+	{% endif %}
+	Presskit</a></li>
+</ul>
+<ul class="icons">
+	<li><a href="https://twitter.com/glassbottommeg" class="fab fa-twitter" rel="nofollow"></a></li>
+	<li><a href="https://discordapp.com/invite/GKjrNbR" class="fab fa-discord" rel="nofollow"></a></li>
+	<li><a href="https://www.patreon.com/glassbottommeg" class="fab fa-patreon" rel="nofollow"></a></li>
+	<li><a href="#mailing_list" class="fas fa-envelope-open" rel="nofollow"></a></li>
+</ul>
